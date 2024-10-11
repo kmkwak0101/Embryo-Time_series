@@ -1,0 +1,9 @@
+{"time": "2024-09-09 09 34", "epoch": 1, "training_loss": 0.590848395600915, "validation_loss": 0.5968463003635407, "accuracy": 0.75}
+{"time": "2024-09-09 11 49", "epoch": 1, "training_loss": 0.6341491769999266, "validation_loss": 0.6056401848793029, "accuracy": 0.75}
+{"time": "2024-09-09 12 49", "epoch": 1, "training_loss": 0.6207092497497797, "validation_loss": 0.6139888405799866, "accuracy": 0.75}
+{"time": "2024-09-09 13 24", "epoch": 2, "training_loss": 0.6497499849647284, "validation_loss": 0.6248293161392212, "accuracy": 0.75}
+{"time": "2024-09-09 14 23", "epoch": 3, "training_loss": 0.6028795586898923, "validation_loss": 0.6239338159561157, "accuracy": 0.75}
+{"time": "2024-09-09 15 00", "epoch": 4, "training_loss": 0.6436654832214117, "validation_loss": 0.630102014541626, "accuracy": 0.75}
+{"time": "2024-09-09 15 38", "epoch": 5, "training_loss": 0.5935737062245607, "validation_loss": 0.687097680568695, "accuracy": 0.725}
+{"time": "2024-09-09 16 26", "epoch": 6, "training_loss": 0.6492650853469968, "validation_loss": 0.6084197998046875, "accuracy": 0.75}
+{"time": "2024-09-09 17 22", "epoch": 7, "training_loss": 0.6225870680063963, "validation_loss": 0.6159926652908325, "accuracy": 0.725}
