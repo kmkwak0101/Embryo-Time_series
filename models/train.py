@@ -82,7 +82,7 @@ you need to use `class_weights` and `WeightedRandomSampler`.
 
 train_dataloader = DataLoader(train_dataset, batch_size=8,shuffle=True,collate_fn=collate_fn, num_workers=4, pin_memory=True)
 
-test_dataset = SequenceDataset.ImageSequenceDataset(csv_file='/home/super/301.Personal_Folder/09.kmkwak/embryo/data/lstm_gwak_prepared_test_final.csv', transform=transform)
+test_dataset = SequenceDataset.ImageSequenceDataset(csv_file='./data/test_final.csv', transform=transform)
 test_dataloader = DataLoader(test_dataset, batch_size=8, shuffle=True, collate_fn=collate_fn, num_workers=4, pin_memory=True)
 
 
@@ -148,7 +148,7 @@ for epoch in range(num_epochs):
     print(f'Validation Loss: {validation_loss:.4f}')
     scheduler.step(validation_loss)
     now = datetime.datetime.now().strftime('%Y-%m-%d %H %M')
-    torch.save(model, f'/media/super/001.Projects/01.Embryo_Selection/99.tmp/resnet152_lstm_weight/aug5_256_2/{now}_{roc_auc:.4f}.pt')
+    torch.save(model, f'./weights/aug5_256_2/{now}_{roc_auc:.4f}.pt')
     log = {
         'time' : datetime.datetime.now().strftime('%Y-%m-%d %H %M'),
         'epoch' : epoch + 1,
@@ -156,5 +156,5 @@ for epoch in range(num_epochs):
         'validation_loss' : validation_loss,
         'auc' : roc_auc
         }
-    with open('/home/super/301.Personal_Folder/09.kmkwak/embryo/models/log/aug5_256_2_log.jsonl','a') as f :
+    with open('./weights/aug5_256_2/aug5_256_2_log.jsonl','a') as f :
         f.write( json.dumps(log, ensure_ascii=False) + "\n" )
